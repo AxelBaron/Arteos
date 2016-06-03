@@ -1,0 +1,68 @@
+/**********************************
+
+Name: cmxform Styles
+
+***********************************/
+form.cmxform {
+	width: 370px;
+	font-size: 1.0em;
+	color: white;
+}
+
+form.cmxform legend {
+	padding-left: 0;
+}
+
+form.cmxform legend, form.cmxform label {
+	color: white;
+}
+
+form.cmxform fieldset {
+	border: none;
+	border-top: 1px solid #C9DCA6;
+	background-color: #232323;
+}
+
+form.cmxform fieldset fieldset {
+	background: none;
+}
+
+form.cmxform fieldset p, form.cmxform fieldset fieldset {
+	padding: 5px 10px 7px;
+}
+
+form.cmxform label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: #ff7000;
+	margin-top: 0px;
+	/*couleur du blabla indiquant l'erreur*/
+	font-style: italic;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.error::-webkit-input-placeholder { /* WebKit browsers */
+    color:    white;
+}
+.error:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+.error::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+.error:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    white;
+}
+
+
+div.error { display: none; }
+input.checkbox { border: none }
+input:focus { outline-color: #ff7000; }
+input.error { border: 1px solid #ff7000; background-color: #999999;}
+/* contours du champs contenant l'erreur */
+textarea.error{border: 1px solid #ff7000; background-color: #999999;}
+textarea:focus{outline-color: #ff7000;}
+
+form.cmxform .gray * { color: gray; }

@@ -1,0 +1,1735 @@
+
+ /*POLICES*/
+@font-face{
+	font-family: 'agencyfb';
+	src: url('../fonts/agency_fb.ttf');
+}
+
+@font-face { 
+  font-family: 'Avenir Next'; 
+  src: url('../fonts/AvenirNext.ttc'); 
+}
+
+@font-face { 
+  font-family: 'Avenir'; 
+  src: url('../fonts/Avenir.ttc'); 
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'entypo-selected';
+  src: url("../fonts/entypo-selected.eot");
+  src: 
+	  url("../fonts/entypo-selected.eot?#iefix") format('embedded-opentype'), 
+	  url("../fonts/entypo-selected.woff") format('woff'), 
+	  url("../fonts/entypo-selected.ttf") format('truetype'), 
+	  url("../fonts/entypo-selected.svg#entypo-selected") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* POLICES */
+
+/* TITRES */
+h1, h2, h3, h4, h5{
+	font-family: 'agencyfb', Arial;
+}
+
+h2#minititre{
+	font-size: 22px;
+}
+
+h2#microtitre{
+	font-size: 20px;
+}
+/* FIN TITRESS */
+
+/* LIENS */
+a{
+	color: #ff7e00;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a img{
+	border: none;
+}
+/* FIN LIENS */
+
+/* on nettoie les float */
+
+.clear{
+	clear:both;
+}
+
+/* on a fini de nettoyer */
+
+
+html, body{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #151515;
+
+	font-family: 'Avenir', Arial;
+	color: white;
+}
+
+/* HEADER */
+
+header{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#logo{
+	float: left;
+	width: 20%;
+	height: auto;
+	margin-left: 2%;
+	margin-top: 1%;
+}
+
+/* NAVIGATION */
+
+#navigation{
+
+    width: 78%;
+    float: left;
+}
+
+#navigation nav{
+    /*le menu fait 960 - la taille du logo + 40px, donc 680px*/
+    width: 100%; 
+    /* il fait la hauteur du logo, de 93px*/
+    height: 93px;
+    /*un float est nécessaire pour se placer à droite du logo*/
+    float: left; 
+    /* disposition en ligne */
+    display: inline;  
+    /* aucune marge ni padding*/
+    margin:0; 
+    padding:0; 
+
+    color:white; 
+    position: relative;
+    z-index: 2;
+}
+
+/*padding plus petit pour que tous les items du menu tiennent*/
+nav ul{ 
+
+    margin-top: 5.6%; 
+    margin-bottom: 0px;
+    list-style: none;
+    margin-left: 0px;
+    float: right;
+}
+
+nav li a{
+
+    display:block; 
+    /*margin-right:0px; */
+
+    color:#FFFFFF; 
+    font-family: "agencyfb"; 
+    font-size: 26px; 
+    line-height: 35px;
+
+    text-decoration: none;
+
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+nav li a:hover{
+	text-decoration: none;
+}
+
+nav>ul>li>a{
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 10px;
+    border-top: 3px solid #707070;
+}
+
+nav>ul>li>a:hover{
+
+    text-decoration: none;
+    color: #ff7e00;
+
+    padding-top: 10px;
+    border-top: 3px solid #ff7e00;
+}
+
+/*on réduit le margin-right afin de placer une police plus grosse pour le menu*/
+
+nav li{
+    display:inline-block; 
+    margin-right:7px; 
+    color:#FFFFFF; }
+
+nav li.last{margin-right:0;}
+
+nav ul li ul{
+
+    position: absolute;
+    width: 150px; /* Largeur des sous-listes */
+    left: -999em;
+      /*Hop, on envoie loin du champ de vision */
+    /*pour que le sous-menu soit à zéro pixel du menu au-dessus du lui*/
+    margin-top: 0px;    
+    padding-left: 0px;
+    background-color: #151515;
+}
+
+nav>ul>li>ul>a>li{
+    line-height: 30px;
+    /*taille à 145 car prend la largeur du ul qui le contient, moins cinq pixels utilisés en padding*/
+    width: 145px;
+    padding-left: 5px;
+    color: white;
+}
+
+/*l'item qui appelle le sous-sous-menu*/
+
+nav>ul>li>ul>li{
+    padding-left: 5px;
+    width: 145px;
+}
+
+nav>ul>li>ul>li>a:hover{
+    color: black;
+}
+
+nav>ul>li>ul>li:hover{
+    /*taille à 145 car prend la largeur du ul qui le contient, moins cinq pixels utilisés en padding*/
+    
+    background-color: #ff7e00;
+    width: 145px;
+}
+
+/* On parle des sous-sous-listes */
+nav li ul ul
+{
+        margin: -45px 0 0 140px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes, d'abord en hauteur (-30px) puis sur le côté */   
+
+}
+
+nav>ul>li>ul>a:hover{
+    background-color: #ff7e00;
+
+}
+
+nav>ul>li>ul>a>li:hover{
+    color: black;
+}
+
+nav>ul>li>ul>a{
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+nav>ul>li>ul>li>ul>a>li{
+    width: 150px;
+    height: 40px;
+}
+
+nav>ul>li>ul>li>ul>a>li:hover{
+    background-color: #ff7e00;
+    color: black;
+}
+
+nav>ul>li>ul>li>ul>a>li{
+    padding-left: 5px;
+}
+
+
+nav li:hover ul ul, nav li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+{
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+}
+
+nav li:hover ul, nav li li:hover ul /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+{
+        left: auto; /* Repositionnement normal */
+        min-height: 0; /* Corrige un bug sous IE */
+}
+
+/* NAVIGATION */
+
+#collectifarteos{
+	width: 100%;
+	margin-top: 1%;
+}
+
+#collectifarteos p{
+	text-align: center;
+	color: #707070;
+	font-family: 'Avenir', Arial;
+	font-size: 20px;
+}
+
+/* SLIDER */
+
+#slider{
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	margin: 30px 0px;
+}
+
+#slider img{
+	/*L'image aura au maximum une hauteur de 324px*/
+}
+
+section#slider{
+	margin: 0px;
+	width: 100%;
+}
+
+#slider1_container{
+	position: relative;
+	
+	top: 0px;
+	left: 0px;
+	width: 1300px;
+	height: 324px;
+	margin: auto;
+
+	/*overflow: hidden;*/
+	z-index: 1;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	}
+
+#slide1_container img{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+
+section#services{margin-bottom: 10px; }
+#container .last{margin:0;}
+#container .more{text-align:right;}
+
+/* SLIDER */
+
+/* SOUS-SLIDER */
+/* fil d'ariane */
+
+#ariane{
+	width: 30%;
+	height: 50px;
+	float: left;
+
+	margin-top: 20px;
+
+}
+
+#ariane p{
+	margin: 0px;
+	margin-left: 20px;
+	font-size: 15px;
+}
+
+/* réseaux sociaux */
+#reseauxsociaux{
+	width: 40%;
+	height: 50px;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	float: left;
+}
+
+#reseauxsociaux img{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* champ de recherche */
+
+#recherche form{
+	margin: 0px;
+	background: none;
+	padding: 0px;
+}
+
+#recherche{
+	margin-top: 20px;
+	float: left;
+	width: 30%;
+	height: 30px;
+	text-align: right;
+}
+
+#recherche input{
+	margin-top: 5px;
+	right: 0px;
+	margin-right: 20px;
+}
+
+#recherche input[type="search"]{
+		-webkit-appearance: none;
+		width: 55%;
+		height: 30px;
+		border: 1px solid #dfdfdf;
+		border-radius: 0px;
+		margin-right: 1%;
+		font-size: 15px;
+	}
+
+input[type="search"]::-webkit-input-placeholder { font-size: 15px; line-height: 20px; }
+input[type="search"]::-moz-placeholder { font-size: 15px; line-height: 27px; font-family: arial; padding-top: 5px; } /* firefox 19+ */
+input[type="search"]:-ms-input-placeholder { font-size: 15px; line-height: 20px; } /* ie */
+input[type="search"]input:-moz-placeholder { font-size: 15px; line-height: 20px; }
+
+#recherche input[type="image"]{
+		width: 30px;
+		height: 30px;
+		border: 1px solid #dfdfdf;
+		border-radius: 0px;
+		background-color: white;
+		margin-bottom: 15px;
+		padding: 2px;
+	}
+
+#recherche input:focus, textarea:focus {
+		outline:none;
+		/* focus */
+		box-shadow: 0px 0px 5px 1px #ff7e00;
+	}
+
+form#formavance{
+
+	background: none;
+	width: 56%;
+	margin: auto;
+	padding: 0;
+
+}
+
+form#formavance2{
+
+	background: none;
+	width: 60%;
+	margin: auto;
+	padding: 0;
+
+}
+
+#formavance input:focus, select:focus input[type="checkbox"]:focus {
+		outline:none;
+		/* focus */
+		box-shadow: 0px 0px 5px 1px #ff7e00;
+}
+
+#formavance2 input:focus, select:focus input[type="checkbox"]:focus {
+		outline:none;
+		/* focus */
+		box-shadow: 0px 0px 5px 1px #ff7e00;
+}
+
+
+form#formavance fieldset{
+	margin: auto;
+	padding: 0 0 10px 0;
+	border: 1px solid black;
+
+}
+
+form#formavance2 fieldset{
+	margin: auto;
+	padding: 0 0 10px 0;
+	border: 1px solid black;
+
+}
+
+form#formavance input[type="search"]{
+		-webkit-appearance: none;
+		width: 95%;
+		height: 30px;
+		border: 1px solid #dfdfdf;
+		border-radius: 0px;
+		font-size: 15px;
+		margin: 0px 5px 15px 15px;
+}
+
+form#formavance2 input[type="search"]{
+		-webkit-appearance: none;
+		width: 95%;
+		height: 30px;
+		border: 1px solid #dfdfdf;
+		border-radius: 0px;
+		font-size: 15px;
+		margin: 0px 5px 15px 15px;
+}
+
+form#formavance input[type="image"]{
+		width: 30px;
+		height: 30px;
+		border: 1px solid #dfdfdf;
+		border-radius: 0px;
+		background-color: white;
+		margin-bottom: 10px;
+		padding: 2px;
+}
+
+form#formavance2 input[type="image"]{
+		width: 4%;
+		height: auto;
+		border: 1px solid #dfdfdf;
+		border-radius: 0px;
+		background-color: white;
+		margin-bottom: 10px;
+		padding: 2px;
+}
+
+input[type="checkbox"]{
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+form#formavance select{
+		width: 28%;
+		height: 30px;
+		border: 1px solid #dfdfdf;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		margin-right: 5px;
+		font-size: 15px;
+		margin-left: 5px;
+}
+
+form#formavance2 select{
+		width: 20.7%;
+		height: 30px;
+		border: 1px solid #dfdfdf;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		margin-right: 5px;
+		font-size: 15px;
+		margin-left: 5px;
+}
+
+form#formavance select:nth-child(4){
+	margin-left: 15px;
+	margin-right: 5px;
+}
+
+form#formavance select:nth-child(6){
+	margin-right: 8px;
+	margin-left: 5px;
+}
+
+form#formavance2 select:nth-child(4){
+	margin-left: 15px;
+	margin-right: 5px;
+}
+
+form#formavance2 select:nth-child(7){
+	margin-right: 8px;
+	margin-left: 5px;
+}
+
+
+
+#rechercheavancee{
+	width: auto;
+	height: auto;
+	margin: 30px 20px 20px 20px;
+
+}
+
+#rechercheavancee hr{
+	width: 50%;
+	border: 2px solid black;
+}
+
+
+.main {
+	padding: 30px 20px 100px 20px;
+	max-width: 1580px;
+	margin: 0 auto;
+}
+
+.main > header {
+	padding: 0 10px 30px;
+}
+
+.main > header h1 {
+	font-size: 34px;
+	line-height: 38px;
+	margin: 0;
+	font-weight: 700;
+	color: #333;
+	float: left;
+}
+
+.main > header h1 span {
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.main h2 {
+	font-size: 38px;
+	font-weight: 300;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+	padding: 10px 0 0 0;
+	margin-bottom: 20px;
+	border-top: 1px solid #f7f7f7;
+}
+
+
+.loadmore {
+	padding: 10px;
+	background: #ddd;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px 4px;
+	display: none;
+}
+
+.loadmore:hover {
+	background: #333;
+}
+
+
+/* Gamma Gallery Style */
+
+.gamma-container {
+	min-height: 200px;
+}
+
+.gamma-gallery {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	position: relative;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.gamma-gallery:before,
+.gamma-gallery:after {
+    content: " ";
+    display: table;
+}
+
+.gamma-gallery:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+.gamma-gallery {
+    *zoom: 1;
+}
+ */
+
+.gamma-gallery li {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	padding: 4px;
+}
+
+.gamma-gallery li img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.gamma-description {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+	text-align: center;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+
+/*.no-touch .gamma-gallery li:hover .gamma-description {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 1;
+}*/
+ 
+/*.gamma-description:before {
+	content: '';
+	height: 100%;
+}
+
+.gamma-description:before,
+.gamma-description h3 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.gamma-description h3 {
+	width: 100%;
+	padding: 0 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+}*/
+
+.gamma-buttons {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10001;
+}
+
+.gamma-buttons button {
+	float: left;
+	background: #333;
+	color: #fff;
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	margin-left: 5px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.gamma-buttons button:before,
+.gamma-nav span:before {
+	font-family: 'entypo-selected';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: block;
+	text-align: center;
+	opacity: 0.7;
+	outline: none;
+}
+
+.no-touch .gamma-buttons button:hover {
+	background: #666;
+}
+
+button.gamma-btn-close:before {
+	content: '\2715';
+}
+
+button.gamma-btn-ssplay:before {
+	content: '\25b6';
+}
+
+button.gamma-btn-sspause:before {
+	content: '\2389';
+}
+
+.gamma-single-view {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+	z-index: 10000;
+	text-align: center;
+	display:none;
+}
+
+.gamma-overlay {
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	display: none;
+	z-index: 9999;
+}
+
+.gamma-single-view img {
+	position: absolute;
+	cursor: pointer;
+}
+
+.gamma-description-wrapper {
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	padding: 5px 0;
+}
+
+.gamma-single-view .gamma-description {
+	background: transparent;
+	position: relative;
+	bottom: auto;
+	left: auto;
+	right: auto;
+	top: auto;
+}
+
+.gamma-single-view .gamma-description h3 {
+	font-size: 15px;
+	padding: 5px 0;
+	color: #fff;
+}
+
+.gamma-nav span {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 38px;
+	top: 50%;
+	margin-top: -19px;
+	left: 20px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.gamma-nav span.gamma-next {
+	left: auto;
+	right: 20px;
+}
+
+.gamma-nav span:before {
+	color: #fff;
+	opacity: 0.7;
+	font-size: 40px;
+}
+
+.gamma-nav span:hover:before {
+	opacity: 1;
+}
+
+.gamma-nav span:before {
+	display: block;
+	margin: 0;
+	width: auto;
+}
+
+.gamma-nav span.gamma-prev:before {
+	content: '\e75d';
+}
+
+.gamma-nav span.gamma-next:before {
+	content: '\e75e';
+}
+
+.gamma-img-fly {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+
+/* Loaders */
+
+.gamma-loading {
+	background: transparent url(../images/loader_light.gif) no-repeat center center;
+}
+
+.gamma-single-view.gamma-loading {
+	background: transparent url(../images/loader_dark.gif) no-repeat center center;
+}
+
+
+/* Make some things unselectable. Remove where selection is needed: */
+
+.gamma-container img,
+.gamma-nav span,
+.gamma-buttons button,
+.gamma-description-wrapper,
+.gamma-description,
+.gamma-description h3 {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media screen and (max-width: 750px) {
+
+	.gamma-description {
+		top: 10px;
+		left: 10px;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.gamma-description h3 {
+		font-size: 14px;
+		padding: 0 5px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.gamma-buttons {
+		float: left;
+		clear: both;
+	}
+
+}
+
+
+/* General Demo Style */
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+
+.support-note span{
+	color: #ac375d;
+	font-size: 16px;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.loadmore {
+	padding: 10px;
+	background: #ddd;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px 4px;
+	display: none;
+}
+
+.loadmore:hover {
+	background: #333;
+}
+
+
+
+/* FIN HEADER */
+
+/* CONTENEUR */
+
+section{
+	width: 100%;
+
+	height: auto;
+	min-height: 200px;
+
+	margin-top: 30px;
+	margin-bottom: 20px;
+	/*background-color: orange;*/
+	overflow: hidden;
+	position: relative;
+}
+
+
+/* ARTICLES MISE EN PAGE GÉNÉRALE */
+article{
+	width: 30%;
+	height: 100%;
+
+	display: inline-block;
+	
+	padding-bottom: 1%;
+	background-color: #0d0d0d;
+	margin: 0.8%;
+	position: relative;
+}
+
+article figcaption a span#textelien{
+	color: black!important;
+	font-weight: 100;
+}
+
+
+article:nth-child(3n-5){
+	margin-left: 3%;
+}
+
+article:nth-child(3n){
+	margin-right: 3%;
+}
+
+article:nth-child(-n+3){
+	margin-top: 0px;
+}
+
+article:nth-child(n+10){
+	margin-bottom: 0px;
+}
+
+.imagephoto{
+	width: 95%;
+	height: auto;
+	margin: auto;
+	text-align: center;
+	position: relative;
+
+}
+
+.imagephoto img{
+	width: 100%;
+	height: 100%;
+	max-height: 486px;
+	margin-top: 10px;
+}
+
+article h2{
+	text-align: center;
+	margin: 0px;
+	margin-left: 10px;
+	margin-top: 5px;
+	color: #ff7e00;
+}
+
+article h3{
+	text-align: center;
+	margin: 0 0 0 10px;
+	color: #ff7e00;
+}
+
+
+/* ON S'AMUSE AVEC L'EFFET */
+
+#fauxlien{
+	color: #ff7e00;
+	font-weight: 600;
+}
+
+#fauxlien:hover{
+	text-decoration: underline;
+}
+
+section figure figcaption {
+	
+	color: #000;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	cursor: pointer;
+}
+
+
+/* placement de la zone blanche */
+section figure figcaption,
+section figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+section figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+section figure p {
+	margin: 0;
+	padding: 25px 10px 0 10px!important;
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 80%;
+
+}
+
+figure.imagephoto figcaption {
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+
+	opacity: 1;
+}
+
+figcaption#lastchild{
+	background-image: url('../images/banderole3.png');
+	background-repeat: no-repeat;
+	background-position: left bottom 5px;
+	background-size: 100% auto;
+}
+
+figcaption#lastchild:hover{
+	background-image: none;
+
+}
+
+/* s'affiche une fois le survol effectué*/
+figure.imagephoto figcaption::before {
+	position: absolute;
+	left: 0px;
+	top:10px;
+	right: 0px;
+	bottom: 0px;
+
+	border: 1px solid #fff;
+	content: '';
+
+
+	background-color: white;
+
+}
+
+
+/* FAIT DISPARAÎTRE ET APPARAÎTRE LE TEXTE*/
+figure.imagephoto figcaption::before,
+figure.imagephoto p {
+	opacity: 0;
+
+	/* donne une opacité et permet le zoom sur le texte */
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	transform: translate3d(100%,100%,100%);
+}
+
+
+figure.imagephoto:hover figcaption::before {
+	opacity: 0.7;
+	/* opacité lors de la transition, une fois que l'on est sur la photo*/
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.imagephoto:hover p{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	transform: translate3d(0,0,0);
+}
+
+figure.imagephoto:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.imagephoto:hover img {
+	opacity: 0.4;
+}
+
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	section figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+
+/* FIN ARTICLES MISE EN PAGE GÉNÉRALE */
+
+/* MISE EN PAGE DES BILLETS */
+
+section#article{
+	width: auto;
+	min-height: 100px;
+	margin: auto;
+	padding: 0px 20px 10px 20px;
+	/*@*/
+	text-align: justify;
+}
+
+section#article h1, h2{
+	color: #ff7e00;
+	text-align: center;
+}
+
+section#article figcaption p{
+	width: 100%;
+}
+
+section#article p{
+	font-size: 14px;
+	margin: 0 10px 0 10px;
+	width: 70%;
+	margin: auto;
+}
+
+section#article p#festivalimg{
+	text-align: center;
+}
+
+section#article hr{
+	width: 50%;
+	border: 2px solid black;
+	margin-top: 30px;
+}
+
+
+section#article #like {
+	margin: 0px auto;
+	width: 200px;
+	height: 25px;
+	display: inline;
+	margin-left: 50%;
+	position: relative;
+	left: -100px;
+}
+
+/* FIN MISE EN PAGE DES BILLETS */
+
+/* AUTRES PAGES */
+
+#articletexte{
+	margin: auto;
+	width: 70%;
+	height: auto;
+	text-align: justify;
+}
+
+#articletexte:after{
+	clear: both;
+}
+
+.photographe-equipe {
+    min-height: 245px;
+}
+
+#articletextecontact{
+	margin: auto;
+	width: 70%;
+	height: auto;
+	background-color: black;
+	text-align: justify;
+}
+
+#articletexte p{
+
+	font-size: 15px;
+}
+
+#articletexte img{
+float: left;	
+margin: 0px 20px 10px 0px;
+}
+
+h1.titre {
+	font-size: 30px;
+	color: #ff7e00;
+	margin-left: 15%;
+}
+
+#articletexte h3{
+	color: #ff7e00;
+}
+
+#articletexte hr{
+	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-color: black;
+}
+
+
+/* FIN AUTRES PAGES */
+
+/* FORMULAIRES */
+
+section#nousjoindre{
+	min-height: 100%;
+	
+}
+
+section form{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+
+/*######## Smart Green ########*/
+form#formulaireinscription{
+	margin-top: 30px;
+}
+
+#formulaireinscription input.submit{
+	background-color: #ff7e00;
+	width: 77%;
+	margin-left: 3%;
+
+}
+
+form {
+    margin: auto; 
+    margin-top: 10px;
+    background: #232323;
+    padding: 0 0 20px 0;
+    font: 12px ;
+    color: white;
+    overflow: auto;
+    overflow-x: hidden;
+    
+}
+
+form div#partgauche{
+	float: left;
+	width: 50%;
+	
+	margin: auto;
+}
+
+form div#partdroite{
+	float: left;
+	width: 50%;
+	margin: auto;
+}
+
+#droit input[type="submit"]{
+	background: #ff7e00;
+	color: black;
+	font-size: 16px;
+	border: none;
+}
+
+#droit input[type="submit"]:hover{
+	cursor: pointer;
+}
+
+#droit input[type="text"].objet{
+	width: 90%;
+	margin-bottom: 20px;
+}
+
+form h1{
+    
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    margin: 0px 0 10px 0;
+    color: black !important;
+    background: #ff7e00;
+    border-bottom:1px solid black;
+}
+
+form h1>span {
+    display: block;
+    font-size: 18px;
+}
+
+section form label{
+	display: block;
+	width: 100%;
+	margin: 0 15px 0 15px;
+}
+
+section form label span{
+	
+	display: block;
+}
+
+section form input{
+	width: 90%;
+	height: 30px;
+	margin: 10px 0 15px 0;
+
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+	padding: 0 5px 0 5px;
+
+}
+
+section form input[type="checkbox"]{
+	width: auto;
+	height: auto;
+	margin: 0px 0 15px 0; 
+}
+
+section form input[type="radio"]{
+	display: inline;
+	width: auto;
+	height: auto;
+	margin: 15px 0 15px 15px;
+}
+
+section form label label{
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+section form label label.radio{
+	margin-left: 0px;
+	margin-top: 10px;
+	font-size: 14px;
+	display: inline;
+	width: auto;
+}
+
+label#checkAPN{
+	display: none;
+	margin-left: 0px;
+}
+
+label#modeleAPN{
+	display: none;
+	margin-left: 0px;
+}
+
+label#nomgrp{
+	display: none;
+}
+
+label#checkapn{
+	display: none;
+	margin-left: 0px;
+}
+
+label#micro{
+	display: none;
+	margin-left: 0px;
+}
+
+label#experience{
+	display: none;
+}
+
+legend{
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+fieldset{
+	border: 1px solid black;
+	width: 90%;
+	margin-bottom: 10px;
+
+}
+
+fieldset.souscat{
+	border-top: 2px solid black;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+span#avezvous{
+	margin-left: 15px;
+}
+
+span.description{
+	display: block;
+	margin-top: -12px;
+	margin-left: 15px;
+	font-style: italic;
+	
+	color: grey;
+}
+
+input [type=checkbox]{
+	font-size: 14px;
+}
+
+#partdroite textarea{
+	padding-right: 7%;
+}
+
+#partdroite input[type="text"]{
+	padding-right: 7%;
+}
+
+section form textarea{
+	display: block;
+	width: 90%;
+	height: 103px;
+	max-height: 103px;
+	max-width: 90%;
+	margin: 10px 0 15px 0;
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+	padding: 5px 5px 0 5px;
+}
+
+::-webkit-input-placeholder { font-size: 12px;
+	font-family: 'Avenir';
+	line-height: 14px; }
+::-moz-placeholder { font-size: 12px;
+	/*font-family: 'Avenir';*/
+
+	line-height: 28px;
+	 } /* firefox 19+ */
+:-ms-input-placeholder { font-size: 12px;
+	font-family: 'Avenir';
+	line-height: 14px; } /* ie */
+input:-moz-placeholder { font-size: 12px;
+	font-family: 'Avenir';
+	line-height: 14px; }
+
+section form input:focus{
+	outline:none;
+	/* focus */
+	box-shadow: 0px 0px 5px 1px #ff7e00;
+
+}
+
+textarea{
+	font-family: inherit;
+	font-size: 12px;
+}
+
+input.button{
+	width: 89%;
+
+	margin: 0px 15px 0px 15px;
+	
+	background:#ff7e00;
+	color: black;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-family: 'agencyfb';
+	padding: 5px 0 5px 0;
+	height: 40px;
+
+}
+
+/* FIN FORMULAIRES */
+
+/* PAGE CONTACT */
+
+
+
+#gauche{
+	float: left;
+	width: 30%;
+	height: auto;
+	background: black;
+	padding: 50px 0 10px 0;
+	text-align: center;
+
+}
+
+#gauche h2{
+	font-size: 26px;
+	margin: 30px;
+}
+
+#gauche p{
+	margin:20px;
+
+}
+
+#gauche img{max-width: 390px;}
+
+#gauche span{
+	color: #ff7e00;
+}
+
+#droit{
+	float: left;
+	width: 70%;
+	height: auto;
+}
+
+#droit form{
+	padding-bottom: 0px;
+}
+
+#droit form input, #droit form textarea{
+	margin: 10px;
+
+}
+
+#droit form textarea{
+	height: 70px;
+}
+
+#droit fieldset{
+	width: 100%;
+	margin-left: 20px;
+	border: 0px;
+	background-color: none;
+}
+
+#droit legend h2{
+	margin-bottom: 0px;
+	padding-top: 20px;
+	font-size: 26px;
+
+}
+
+#droit form input[type="text"], #droit form input[type="email"]{
+	float: left;
+	width: 93%;
+}
+
+#nomprenomnom{
+	float: left;
+	width: 45%;
+	margin-right: 3%;
+}
+
+#mailmail{
+	float: left;
+	width: 45%;
+}
+
+
+/*FIN PAGE CONTACT */
+
+/* CONTENEUR */
+/* FOOTER */
+
+footer{
+	width: 100%;
+	height: 390px;
+	margin: auto;
+	margin-top: 30px;
+
+	
+    background-image:linear-gradient(transparent, black);
+}
+
+/*PARTIE GAUCHE VIDE*/
+#gauchefooter{
+	width: 25%;
+	height: 345px;
+	float: left;
+}
+
+
+#centrefooter{
+	width: 50%;
+	height: 250px;
+
+	float: left;
+	margin: auto;
+}
+
+#droitefooter{
+	width: 25%;
+	height: 35px;
+	float: right;
+
+}
+
+#titrecentre{
+	width: 50%;
+	height: 50px;
+	float: left;
+	padding-top: 10px;
+	border-top: 3px solid black;
+}
+
+#titrecentre h1{
+	color: grey;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+#copyright{
+	width: 50%;
+	height: 25px;
+	float: left;
+}
+
+#copyright p{
+	font-size: 12px;
+	color: grey;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.partenaire{
+	float: left;
+	width: 30%;
+	height: 105px;
+	margin: 1%;
+
+	text-align: center;
+}
+
+.partenaire:first-child{
+	margin-left: 3%;
+}
+
+.partenaire:last-child{
+	margin-right: 3%;
+}
+
+.partenaire:nth-child(5){
+	margin-left: 3%;
+}
+
+
+/* FIN FOOTER */
+
+#btnscrollinfini{
+
+	width: 50%;
+	height: 35px;
+	margin: auto;
+
+	background-color: #ff7e00;
+
+	line-height: 35px;
+	color: black;
+	font-weight: 400;
+	text-align: center;
+
+	cursor: pointer;
+}
+
