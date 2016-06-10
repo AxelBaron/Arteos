@@ -11,7 +11,7 @@
 					</a>
 				</div>
 				<div class="partenaire">
-					<a href="http://www.mindtherock.com/" target="_blanc">
+					<a href="http://www.mindtherock.fr/" target="_blanc">
 						<img src="images/partenaires/mindtherock.png" alt="Mind The Rock">
 					</a>
 				</div>
@@ -21,42 +21,37 @@
 					</a>
 				</div>
 				<div class="clear"></div>
-				<div class="partenaire">
+				<div class="partenaire partenaire-large">
 					<a href="http://rjrradio.fr/">
 						<img src="images/partenaires/rjr.png" alt="Radio Jeune Reims" target="_blanc">
 					</a>
 				</div>
-				<div class="partenaire">
+				<div class="partenaire partenaire-large">
 					<a href="http://www.radioprimitive.fr/www/Bienvenue.html" target="_blanc">
 						<img src="images/partenaires/radioprimitive.png" alt="Radio Primitive">
 					</a>
 				</div>
-				<div class="partenaire">
-					<a href="#">
-						<img src="images/partenaires/studioxpress.png" alt="Studio Xpress">
-					</a>	
-				</div>
 			</div>
 			<div id="copyright">
-				<p>© Toutes les photographies sont la propriété du collectif ArtÉos. Merci de nous contacter pour toute utilisation.<br/>© Site Web réalisé par Damien Bécret, Lolita Grasset et Axel Baron.</p>
+				<p>© Toutes les photographies sont la propriété du collectif ArtÉos. Merci de nous contacter pour toute utilisation.<br/>© Site Web réalisé par Damien Bécret, Lolita Grasset et <a href='http://axelbaron.fr/'>Axel Baron</a>.</p>
 			</div>
-			
+
 		</footer>
 
 
-		
+
 	    <!-- use jssor.slider.mini.js (40KB) instead for release -->
 	    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
 	    <script type="text/javascript" src="js/jssor.js"></script>
 	    <script type="text/javascript" src="js/jssor.slider.js"></script>
-		
+
 		<script src="js/jquery.masonry.min.js"></script>
 		<script src="js/jquery.history.js"></script>
 		<script src="js/js-url.min.js"></script>
 		<script src="js/jquerypp.custom.js"></script>
 		<script src="js/gamma.js"></script>
 		<script type="text/javascript">
-			
+
 			$(function() {
 
 				var GammaSettings = {
@@ -79,13 +74,13 @@
 						}, {
 							width : 500,
 							columns : 2
-						}, { 
+						}, {
 							width : 436,
 							columns : 2
-						}, { 
+						}, {
 							width : 320,
 							columns : 1
-						},{ 
+						},{
 							width : 0,
 							columns : 1
 						} ]
@@ -109,7 +104,7 @@
 						++page;
 						var newitems = items[page-1]
 						if( page <= 1 ) {
-							
+
 							Gamma.add( $( newitems ) );
 
 						}
@@ -125,6 +120,6 @@
 
 			});
 
-		</script>	
+		</script>
 	</body>
 </html>

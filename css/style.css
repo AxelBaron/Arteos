@@ -5,14 +5,14 @@
 	src: url('../fonts/agency_fb.ttf');
 }
 
-@font-face { 
-  font-family: 'Avenir Next'; 
-  src: url('../fonts/AvenirNext.ttc'); 
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNext.ttc');
 }
 
-@font-face { 
-  font-family: 'Avenir'; 
-  src: url('../fonts/Avenir.ttc'); 
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir.ttc');
 }
 
 @font-face {
@@ -29,10 +29,10 @@
 @font-face {
   font-family: 'entypo-selected';
   src: url("../fonts/entypo-selected.eot");
-  src: 
-	  url("../fonts/entypo-selected.eot?#iefix") format('embedded-opentype'), 
-	  url("../fonts/entypo-selected.woff") format('woff'), 
-	  url("../fonts/entypo-selected.ttf") format('truetype'), 
+  src:
+	  url("../fonts/entypo-selected.eot?#iefix") format('embedded-opentype'),
+	  url("../fonts/entypo-selected.woff") format('woff'),
+	  url("../fonts/entypo-selected.ttf") format('truetype'),
 	  url("../fonts/entypo-selected.svg#entypo-selected") format('svg');
   font-weight: normal;
   font-style: normal;
@@ -114,26 +114,26 @@ header{
 
 #navigation nav{
     /*le menu fait 960 - la taille du logo + 40px, donc 680px*/
-    width: 100%; 
+    width: 100%;
     /* il fait la hauteur du logo, de 93px*/
     height: 93px;
     /*un float est nécessaire pour se placer à droite du logo*/
-    float: left; 
+    float: left;
     /* disposition en ligne */
-    display: inline;  
+    display: inline;
     /* aucune marge ni padding*/
-    margin:0; 
-    padding:0; 
+    margin:0;
+    padding:0;
 
-    color:white; 
+    color:white;
     position: relative;
     z-index: 2;
 }
 
 /*padding plus petit pour que tous les items du menu tiennent*/
-nav ul{ 
+nav ul{
 
-    margin-top: 5.6%; 
+    margin-top: 5.6%;
     margin-bottom: 0px;
     list-style: none;
     margin-left: 0px;
@@ -142,12 +142,12 @@ nav ul{
 
 nav li a{
 
-    display:block; 
+    display:block;
     /*margin-right:0px; */
 
-    color:#FFFFFF; 
-    font-family: "agencyfb"; 
-    font-size: 26px; 
+    color:#FFFFFF;
+    font-family: "agencyfb";
+    font-size: 26px;
     line-height: 35px;
 
     text-decoration: none;
@@ -179,8 +179,8 @@ nav>ul>li>a:hover{
 /*on réduit le margin-right afin de placer une police plus grosse pour le menu*/
 
 nav li{
-    display:inline-block; 
-    margin-right:7px; 
+    display:inline-block;
+    margin-right:7px;
     color:#FFFFFF; }
 
 nav li.last{margin-right:0;}
@@ -192,7 +192,7 @@ nav ul li ul{
     left: -999em;
       /*Hop, on envoie loin du champ de vision */
     /*pour que le sous-menu soit à zéro pixel du menu au-dessus du lui*/
-    margin-top: 0px;    
+    margin-top: 0px;
     padding-left: 0px;
     background-color: #151515;
 }
@@ -218,7 +218,7 @@ nav>ul>li>ul>li>a:hover{
 
 nav>ul>li>ul>li:hover{
     /*taille à 145 car prend la largeur du ul qui le contient, moins cinq pixels utilisés en padding*/
-    
+
     background-color: #ff7e00;
     width: 145px;
 }
@@ -226,7 +226,7 @@ nav>ul>li>ul>li:hover{
 /* On parle des sous-sous-listes */
 nav li ul ul
 {
-        margin: -45px 0 0 140px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes, d'abord en hauteur (-30px) puis sur le côté */   
+        margin: -45px 0 0 140px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes, d'abord en hauteur (-30px) puis sur le côté */
 
 }
 
@@ -304,7 +304,7 @@ section#slider{
 
 #slider1_container{
 	position: relative;
-	
+
 	top: 0px;
 	left: 0px;
 	width: 1300px;
@@ -688,7 +688,7 @@ form#formavance2 select:nth-child(7){
 	filter: alpha(opacity=80);
 	opacity: 1;
 }*/
- 
+
 /*.gamma-description:before {
 	content: '';
 	height: 100%;
@@ -763,7 +763,7 @@ button.gamma-btn-sspause:before {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;	
+	height: 100%;
 	z-index: 10000;
 	text-align: center;
 	display:none;
@@ -924,7 +924,7 @@ button.gamma-btn-sspause:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	
+
 }
 
 
@@ -980,7 +980,7 @@ article{
 	height: 100%;
 
 	display: inline-block;
-	
+
 	padding-bottom: 1%;
 	background-color: #0d0d0d;
 	margin: 0.8%;
@@ -1052,7 +1052,7 @@ article h3{
 }
 
 section figure figcaption {
-	
+
 	color: #000;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
@@ -1259,7 +1259,7 @@ section#article #like {
 }
 
 #articletexte img{
-float: left;	
+float: left;
 margin: 0px 20px 10px 0px;
 }
 
@@ -1287,7 +1287,7 @@ h1.titre {
 
 section#nousjoindre{
 	min-height: 100%;
-	
+
 }
 
 section form{
@@ -1310,7 +1310,7 @@ form#formulaireinscription{
 }
 
 form {
-    margin: auto; 
+    margin: auto;
     margin-top: 10px;
     background: #232323;
     padding: 0 0 20px 0;
@@ -1318,13 +1318,13 @@ form {
     color: white;
     overflow: auto;
     overflow-x: hidden;
-    
+
 }
 
 form div#partgauche{
 	float: left;
 	width: 50%;
-	
+
 	margin: auto;
 }
 
@@ -1351,7 +1351,7 @@ form div#partdroite{
 }
 
 form h1{
-    
+
     text-align: center;
     padding: 10px 0px 10px 0px;
     display: block;
@@ -1373,7 +1373,7 @@ section form label{
 }
 
 section form label span{
-	
+
 	display: block;
 }
 
@@ -1392,7 +1392,7 @@ section form input{
 section form input[type="checkbox"]{
 	width: auto;
 	height: auto;
-	margin: 0px 0 15px 0; 
+	margin: 0px 0 15px 0;
 }
 
 section form input[type="radio"]{
@@ -1473,7 +1473,7 @@ span.description{
 	margin-top: -12px;
 	margin-left: 15px;
 	font-style: italic;
-	
+
 	color: grey;
 }
 
@@ -1533,7 +1533,7 @@ input.button{
 	width: 89%;
 
 	margin: 0px 15px 0px 15px;
-	
+
 	background:#ff7e00;
 	color: black;
 	font-size: 20px;
@@ -1637,7 +1637,7 @@ footer{
 	margin: auto;
 	margin-top: 30px;
 
-	
+
     background-image:linear-gradient(transparent, black);
 }
 
@@ -1714,6 +1714,10 @@ footer{
 	margin-left: 3%;
 }
 
+.partenaire-large{
+	width: 46%;
+}
+
 
 /* FIN FOOTER */
 
@@ -1732,4 +1736,3 @@ footer{
 
 	cursor: pointer;
 }
-
